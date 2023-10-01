@@ -23,4 +23,10 @@ Tonal architecture might be the key but knowledge has been lost. (see deafening 
 Cast Sound at the portal to see the image shift
 Cast Silence at PC to enter safely
 
-# Part 3 : Halls of the Colossus
+# Questions for us to move forward / elements we could include
+- The Empire is keen to understand how Numidium was activated (cut Legion quest to get Numidium plans)
+- Where do the fragments go? The desert with the rest of Numiduim? The Halls where the time wound happened?
+- Getting closer to the fragments drain fatigue unless PC is under the effect of a silence spell
+- Finding a fragment sends PC back to the cave? (one-way trip until the fragment is found)
+- When/how PC realises they've moved through time as well as space. >> Do we show the Halls now and/or then, the desert now and/or then?
+- PC gets a minor understanding of time (chronomancy)
