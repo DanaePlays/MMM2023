@@ -29,12 +29,6 @@ We need:
 - The Khajiit thinks the magic of the fragment has awoken since he got in Vvardenfell, he had hoped to sell it but he was captured by the slavers. The description of the decay reminds him of the decay in the Halls where he found the fragment. The answers must be on the other side of the rift
 
 # Part 3 : the desert and oasis (G7's notes on the plot)
-- Slavers captured the scavenger and his artifact. It's "decay"ing their cave, people, and the surrounding lands.
-- PC hears rumors about this, or just happens to find the strange exterior and decides to investigate.
-- Inside you meet the few surviving slavers, learn a bit of backstory + visual storytelling of decay.
-- Ultimately learn about the last slave they captured and go find him.
-- He tells you about the artifact, maybe he's a bit mad by now and story doesn't sound believable. 
-- You go and check it out, and when you touch the artifact are teleported to Elsewyre.
 - In the desert you get accosted by some Blades who demand to know how you got here.
 - They think you're a smuggler: many have tried to find valuables in the Halls.
 - You get some dialogue where you can figure out timelines are funky (?)
