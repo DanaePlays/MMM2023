@@ -4,7 +4,7 @@
 
 # Backstory
 
->In the second era, a Khajiit scavenger sneaks into the Halls of Colossus. Inside, having slipped the Blades who occupy the area, he spots a treasure - a strange piece of metal that distorts the space around it. Thinking it's his lucky break, he snatches the artifact, only to find that when he looks up the ruins around him have changed. Previously open passages are now flooded in sand, walls that were solid are now rubble. The artifact has lost its a strange aura. Not quite understanding what had happened he begins the treacherous journey back to Rimmen to find a buyer.
+>In the [second era](writing/timeline), a Khajiit scavenger sneaks into the Halls of Colossus. Inside, having slipped the Blades who occupy the area, he spots a treasure - a strange piece of metal that distorts the space around it. Thinking it's his lucky break, he snatches the artifact, only to find that when he looks up the ruins around him have changed. Previously open passages are now flooded in sand, walls that were solid are now rubble. The artifact has lost its a strange aura. Not quite understanding what had happened he begins the treacherous journey back to Rimmen to find a buyer.
 >
 >Fast forward to the present; He never managed to sell the artifact - without the aura it appeared to be a useless piece of metal. Not only that but the city he returned to had completely changed, everyone and everything he knew was gone. His usual contacts apparently long dead. He had somehow slipped hundreds of years into the future, and anyone he told the story to called him mad or a fraud.
 >
