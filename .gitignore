@@ -1,1 +1,5 @@
 .obsidian
+backups
+merge_to_master.log
+
+!merge_to_master.exe
