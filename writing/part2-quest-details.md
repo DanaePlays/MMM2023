@@ -6,7 +6,8 @@
 #### convince guards they are not a thief and can maybe ferret them out because new in town
 #### find a loose bar, half dug tunnel and escape
 #### fred by local TG
-- NEED A FEW QUESTS HERE (gain TG trust? prove your with as a thief/soldier?
+- TG: they want you to go after Maho, a fellow thief sent to investigate Imperial activity at the Halls. They since found out that Zurin Arctus himself will be present and decided to abort the mission.
+- B: they are aware an thief snuck past them and reached the Halls. He must be found and stopped at all cost.
 - PC heads to Halls to find Maho
 - PC finds Maho and convinces him to not steal the fragment (offer other riches found in the Hall?) or kills Maho
 - PC is transported back to their time
