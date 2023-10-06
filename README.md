@@ -1,6 +1,6 @@
 # Synopsis
 
->An accidental time traveler brings a shard of the original Numidium to Vvardenfell. This causes a "time-wound", afflicting the surrounding lands and people with premature aging and death. To cure this wound and restore the lands you'll have to travel to the past and return the shard to it's correct place/time - the Halls of Colossus in the deserts of Elseweyr.
+>An accidental time traveler brings a shard of the original Numidium to Vvardenfell. This causes a "time-wound", afflicting the surrounding lands and people with premature ageing and death. To cure this wound and restore the lands you'll have to travel to the past and return the shard to its correct place/time - the Halls of Colossus in the deserts of Elseweyr.
 
 # Backstory
 
@@ -10,33 +10,22 @@
 >
 >With nothing else to go on, he decides to travel to Vvardenfell, the homeland of Numidium's creators, hoping these people to be more inclined toward believing his story.
 
-# Part 1: Intro
+# Part 1: Intro - quest ID ggw_01_intro
+## Synopsis
+You meet an old Khajiit who has been robbed and left for dead by bandits, south of the Zainab Ashlander Camp.
+He asks for your help to retrieve his belongings, he explains he cannot get home without a particular item.
+You find the cave (decaying bits and/or directions from a Zainab Dunmer) and talk to the ghost of a brigand.
+The brigands explains: "We aged rapidly, our strength waned, and before we knew it, we were dead. It was like time sped up."
+You venture deeper into the cave to find out more
+You find a tear/rift/portal and step through
 
->While exploring the Grazelands(?) you comes across an area in an otherwise lush zone that appears to be cursed and decaying. Following the visuals leads to the entrance of a slavers cave. Inside the effects are worse, most of the slavers have prematurely aged and died, similar effects are visible on the flora. You interrogate one of the few survivors and he blames the curse on a recently captured Khajiit.
->
->Exploring further into the cave you find said Khajiit, who doesn't make a lot of sense, but you gather that he had an artifact of Dwemer origin that may be the cause of all this. The best of the stolen loot was taken to the lead slaver's quarters, so you make your way there to find the artifact. The curse becomes increasingly more apparent the closer you get, until the final chamber is flooded with sand unlike anything normally seen in Vvardenfell.
->
->You finally find the artifact, partially submerged in sand, and surrounded by strange distortions in the air (You may find the Khajiit's journal here as well). When you take the artifact the distortions disperse and you feel the air change. You look around and find yourself suddenly surrounded by desert.
-
-TL;DR...
-- You discover (or follows rumors to) a cursed slaver cave. 
-- Decay is seeping out of the entrance.
-- Inside, plants and inhabitants are decaying, dead, or dying. 
-- The closer to the artifact the worse the situation gets.
-- You can find the Khajiit's belongings, which potentially includes a [journal](writing/journal.md).
-
-We need...
-- A slaver cave in the Grazelands.
-- Decaying variants of appropriate flora and fauna assets.
-- Dialogue for our Khajiit and potentially any other survivors.
-- Unique textured Elseweyr sand assets.
-- Assets for the artifact itself.
-- Distortion VFX shaders.
+See [todo](writing/part1-todo.md)
+See [quest details](writing/part1-quest-details.md)
 
 # Part 2: The desert
 >You start exploring the desert and soon spot an imposing ruin in the distance. With nothing else on the horizon, it's the only place to go.
 >
->Not far from said ruins a group of armed soldiers stop you. Apparently you're deep within a restricted area, a desert of Elseweyr annexed by the Empire. The soldiers ask you unusual questions that eventually reveal you're not only in a different province, but a different time as well.
+>Not far from said ruins a group of armed soldiers stop you. Apparently, you're deep within a restricted area, a desert of Elseweyr annexed by the Empire. The soldiers ask you unusual questions that eventually reveal you're not only in a different province, but a different time as well.
 >
 >The conversation progresses and you learn about the Halls of Colossus, and the "time-wounds" within. These Blades sole job is to make sure none of the artifacts or afflicted make it out of the desert. You can either fight them or agree to return the artifact back to where it was taken.
 
