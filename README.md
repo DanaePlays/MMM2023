@@ -25,7 +25,7 @@ See [quest details](writing/part1-quest-details.md)
 # Part 2: The desert
 >You start exploring the desert and soon spot an imposing building in the distance. With nothing else on the horizon, it's the only place to go.
 >
->Not far from said [building](reference art/AR-quest-The_Halls_of_Colossus.jpg) a group of armed soldiers stop you. Apparently, you're deep within a restricted area, a desert of Elseweyr annexed by the Empire. The soldiers are convinced you are a thief: after all noone ventures this far in the desert unless they are curious about the Halls.
+>Not far from said [building](reference%20art/AR-quest-The_Halls_of_Colossus.jpg) a group of armed soldiers stop you. Apparently, you're deep within a restricted area, a desert of Elseweyr annexed by the Empire. The soldiers are convinced you are a thief: after all noone ventures this far in the desert unless they are curious about the Halls.
 >
 >You are promptly arrested and put in jail... from which you'll escape, and find your way into the Halls, maybe even a way back home.
 
