@@ -12,6 +12,16 @@
 - PC finds Maho and convinces him to not steal the fragment (offer other riches found in the Hall?) or kills Maho
 - PC is transported back to their time
 
+## Quick desert summary in terms of loacations:
+- PC spawn  - can see Halls but not Oasis
+- Halls exterior
+- Oasis with Blades and TG (maybe need a line about how TG felt it was very clever to hide right under the Blades noses 😄), a bazaar
+
 Suggestion: 
 - a book about the amazing thief Maho who entered the Halls and brought riches (just not a piece of Numi) and ridiculed the Blades
-- a book about a stranger who promised to help the Blades but disappeared out of thin air with a few riches from the halls.
+
+We need...
+- A desert landscape.
+- Appropriate flora, rocks, and so on.
+- Dialogue for the soldiers.
+- Exterior assets for the Halls of Colossus.

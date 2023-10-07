@@ -23,26 +23,16 @@ See [todo](writing/part1-todo.md)
 See [quest details](writing/part1-quest-details.md)
 
 # Part 2: The desert
->You start exploring the desert and soon spot an imposing ruin in the distance. With nothing else on the horizon, it's the only place to go.
+>You start exploring the desert and soon spot an imposing building in the distance. With nothing else on the horizon, it's the only place to go.
 >
->Not far from said ruins a group of armed soldiers stop you. Apparently, you're deep within a restricted area, a desert of Elseweyr annexed by the Empire. The soldiers ask you unusual questions that eventually reveal you're not only in a different province, but a different time as well.
+>Not far from said [building](reference art/AR-quest-The_Halls_of_Colossus.jpg) a group of armed soldiers stop you. Apparently, you're deep within a restricted area, a desert of Elseweyr annexed by the Empire. The soldiers are convinced you are a thief: after all noone ventures this far in the desert unless they are curious about the Halls.
 >
->The conversation progresses and you learn about the Halls of Colossus, and the "time-wounds" within. These Blades sole job is to make sure none of the artifacts or afflicted make it out of the desert. You can either fight them or agree to return the artifact back to where it was taken.
+>You are promptly arrested and put in jail... from which you'll escape, and find your way into the Halls, maybe even a way back home.
 
-TL;DR...
-- You are teleported to a desert in Elseweyr.
-- You meet the Blades who inhabit the area.
-- You learn you've also went back in time.
-- You travel onward to the Halls of Colossus.
-
-We need...
-- A desert landscape.
-- Appropriate flora, rocks, and so on.
-- Dialogue for the soldiers.
-- Exterior assets for the Halls of Colossus.
+See [quest details](writing/part2-quest-details.md)
 
 # Part 3: The Halls
->Delve into the Halls of Colossus. Do puzzles, fight monsters, learn chronomancy. Eventually return your piece of the Numidium to it's rightful place (and time). Somewhere along the journey you encounter the past version of our Khajiit smuggler and convince him stealing from this place is a bad idea (or kill him). Doing so repairs the timeline and warps you back to the slaver cave, which along with the surrounding lands is now reborn free of decay.
+>Delve into the Halls of Colossus. Do puzzles, fight monsters, learn chronomancy. Eventually, you encounter the past version of our Khajiit smuggler and relay the TG order to abort the mission/warn him the Blades are right behind you. Maho agrees to leave without the fragment. Doing so repairs the timeline and warps you back to the smugglers' cave, which along with the surrounding lands is now reborn free of decay.
 
 TL;DR...
 - The main dungeon crawl.
