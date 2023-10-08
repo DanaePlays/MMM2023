@@ -17,6 +17,7 @@
 - script the rowboat to take the player through the waterfall
 > for now rowboat-door trick - Danae
 
+- forgreet + dialogue for smugglers when PC returns to cave
 
 We need...
 - Decaying variants of appropriate flora and fauna assets.
