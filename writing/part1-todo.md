@@ -1,14 +1,9 @@
 ## to-do
-- add a decaying (scripted) body outside the cave, and make that body pop the ghost.
-
 - script the cave door to not open until journal index 10?  
-
-- add decay outside the cave to help the player find it
-> added placeholder (D) hackle-lo & a skeletal rat - Danae  
 
 - add portal + teleport to desert
 	- add warning before teleporting to desert
-	- remove constant spell effects 01 to 04 (keep 01a and 03a)  
+	- remove constant spell effects 01 to 05 (keep 01a and 03a)  
 
 - shader/decal/glitch for decay with stronger effect near the rift
 - add sand/desert objects near the rift
@@ -16,8 +11,6 @@
 
 - script the rowboat to take the player through the waterfall
 > for now rowboat-door trick - Danae
-
-- forgreet + dialogue for smugglers when PC returns to cave
 
 We need...
 - Decaying variants of appropriate flora and fauna assets.
