@@ -1,5 +1,5 @@
 ## to-do
-- script the cave door to not open until journal index 10?  
+- script the cave door to not open until journal index 10?  - I will do that - Danae
 
 - add portal + teleport to desert
 	- add warning before teleporting to desert
