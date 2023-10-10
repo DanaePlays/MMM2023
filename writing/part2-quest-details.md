@@ -1,3 +1,12 @@
+## Journal entries/index
+1 I was Tped
+5 I was imprisoned
+10 Got a message and lockpick
+15 got my stuff
+20 found the TG
+25 met TG leader, unpleasant surpise for them
+30 agreed to find Maho through the tunnels.- Quest end?
+
 ## Proposed timeline
 - PC spawns in the desert, nothing in sight but dune and a building (Halls)
 - PC is arrested by Blades as they get close to ruins (restricted area, we've had enough of your kind, thief!)
