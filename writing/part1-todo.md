@@ -15,7 +15,7 @@
 - Messagebox "After mere minutes of wandering, the extreme heat takes its toll on you. Dizziness sets in, and your vision blurs as you stumble and collapse onto the hot sand. "
 - fadeout/fadein, tp in "Imperial Outpost" 2634, -1246, -114
 
-**Other things	
+**Other things**	
 - shader/decal/glitch/heartbeat for decay with stronger effect near the rift
 - script the rowboat to take the player through the waterfall
 Starting point:
