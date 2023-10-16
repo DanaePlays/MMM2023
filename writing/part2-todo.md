@@ -1,5 +1,8 @@
 ## to-do
-- forcegreet Blade-arrest
-- all inventory to evidence chest + MessageBox "Mysterious guard: I’ll be back for you later. Then we’ll find out the truth."
-- figure out the Halls exterior so we can have the Blades barracks and prison
-- the jail has a high narrow opening, forcegreet ggw_tg_breakout when near window
+- FIGURE OUT THE HALLS EXTERIOR SO WE CAN PLACE THE OUTPOST
+
+- code to place PC's inventory in evidence chest @G7
+- journal update when gear retrieved @Danae
+- journal update when doc read @Danae
+- (journal update when out of outpost - now to find the Tg!) @Danae
+- dialogue with TG @Danae
