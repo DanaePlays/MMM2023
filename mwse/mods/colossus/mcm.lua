@@ -1,4 +1,4 @@
-local config = require("collosus.config")
+local config = require("colossus.config")
 
 local function leaveMCM()
     pcall(function()
@@ -12,8 +12,8 @@ local function leaveMCM()
 end
 
 
-local template = mwse.mcm.createTemplate({ name = "Halls of Collosus" })
-template:saveOnClose("collosus", config)
+local template = mwse.mcm.createTemplate({ name = "Halls of colossus" })
+template:saveOnClose("colossus", config)
 template:register()
 
 local preferences = template:createSideBarPage({ label = "Preferences" })
@@ -32,8 +32,8 @@ teleports:createDropdown({
             value = {
                 reference = "player",
                 cell = "Elsweyr",
-                position = {-666.00,365.00,7000.00},
-                orientation = {0.0,0.0,0.0},
+                position = { -666.00, 365.00, 7000.00 },
+                orientation = { 0.0, 0.0, 0.0 },
             },
         },
         {
@@ -41,20 +41,21 @@ teleports:createDropdown({
             value = {
                 reference = "player",
                 cell = "Grazelands Region",
-                position = {71377.05,69741.88,890.79},
-                orientation = {0.00,0.00,-1.54},
+                position = { 71377.05, 69741.88, 890.79 },
+                orientation = { 0.00, 0.00, -1.54 },
             },
         },
         {
             label = "Cave Interior",
             value = {
                 reference = "player",
-                cell = "ggw cave",
-                position = {-450.76,1443.23,523.56},
-                orientation = {0.00,0.00,-2.52},
+                cell = "Adasamsibi1",
+                position = { 56.49, -82.12, 600.32 },
+                orientation = { 0.00, 0.00, 2.36 },
             },
         },
     },
+    ---@diagnostic disable-next-line
     variable = mwse.mcm:createVariable({
         set = function(self, value)
             timer.frame.delayOneFrame(leaveMCM)

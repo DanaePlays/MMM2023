@@ -72,9 +72,9 @@ float2 glitch(float2 tex) {
         if (tex.y >= i && tex.y <= i + step) {
             tex.x += r;
         }
-        if (tex.x >= i && tex.x <= i + step) {
-            tex.y += r;
-        }
+        // if (tex.x >= i && tex.x <= i + step) {
+        //     tex.y += r;
+        // }
     }
 
     return tex;
@@ -114,7 +114,7 @@ float4 draw(float2 tex: TEXCOORD0): COLOR {
             glitched *= saturate(aberration(rand(time)) + 0.85);
 
             // add a white outline
-            color = lerp(color, 1.0, 0.04);
+            // color = lerp(color, 1.0, 0.04);
 
             // blend into glitched
             float middleDist = (a + b) * 0.5;
