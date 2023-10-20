@@ -26,7 +26,7 @@ timer.register("colossus:jailArrival", function()
     end
     tes3.updateInventoryGUI({ reference = tes3.player })
 
-    tes3.setJournalIndex({ id = "ggw_02_tg", index = 5 })
+    tes3.setJournalIndex({ id = "ggw_02_tg", index = 5, showMessage = true })
 end)
 
 timer.register("colossus:teleportJail", function()
@@ -124,8 +124,8 @@ end
 
 
 local function onCellChanged(e)
-    local isAdasamsibi = e.cell.id == "Adasamsibi1"
-    local wasAdasamsibi = e.previousCell and e.previousCell.id == "Adasamsibi1"
+    local isAdasamsibi = e.cell.id == "Adasamsibi"
+    local wasAdasamsibi = e.previousCell and e.previousCell.id == "Adasamsibi"
     if isAdasamsibi and not wasAdasamsibi then
         enteredAdasamsibi()
     elseif wasAdasamsibi and not isAdasamsibi then
