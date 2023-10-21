@@ -9,6 +9,68 @@ local blackout = require("colossus.shaders.blackout")
 local log = require("colossus.log")
 local utils = require("colossus.utils")
 
+local exteriorConfig = {}
+local interiorConfig = {
+    render = {
+        reflectSky = false,
+        reflectInterior = false,
+        reflectNearStatics = false,
+        reflectiveWater = false,
+    },
+    colors = {
+        ambientDayColor     = { 0.08369, 0.08995, 0.08263 },
+        ambientNightColor   = { 0.12549, 0.13725, 0.16470 },
+        ambientSunriseColor = { 0.18431, 0.25882, 0.37647 },
+        ambientSunsetColor  = { 0.26666, 0.29411, 0.37647 },
+        fogDayColor         = { 0.02032, 0.03054, 0.02176 },
+        fogNightColor       = { 0.03529, 0.03921, 0.04313 },
+        fogSunriseColor     = { 1.00000, 0.74117, 0.61568 },
+        fogSunsetColor      = { 1.00000, 0.74117, 0.61568 },
+        skyDayColor         = { 0.00000, 0.00000, 0.00000 },
+        skyNightColor       = { 0.03529, 0.03921, 0.04313 },
+        skySunriseColor     = { 0.45882, 0.55294, 0.64313 },
+        skySunsetColor      = { 0.21960, 0.34901, 0.50588 },
+        sunDayColor         = { 0.00029, 0.00000, 0.00000 },
+        sunNightColor       = { 0.23137, 0.38039, 0.69019 },
+        sunSunriseColor     = { 0.94901, 0.62352, 0.46666 },
+        sunSunsetColor      = { 1.00000, 0.44705, 0.30980 },
+        sundiscSunsetColor  = { 1.00000, 0.74117, 0.61568 },
+    },
+}
+
+local function cacheExteriorConfig()
+    if next(exteriorConfig) == nil then
+        local weather = tes3.getCurrentWeather()
+
+        exteriorConfig.render = {}
+        for name in pairs(interiorConfig.render) do
+            exteriorConfig.render[name] = mge.render[name]
+        end
+
+        exteriorConfig.colors = {}
+        for name in pairs(interiorConfig.colors) do
+            local color = weather[name]
+            exteriorConfig.colors[name] = { color.r, color.g, color.b }
+        end
+    end
+end
+
+local function applyConfig(config)
+    local weather = tes3.getCurrentWeather()
+
+    for name, value in pairs(config.render) do
+        mge.render[name] = value
+    end
+    for name, value in pairs(config.colors) do
+        local color = weather[name]
+        color.r = value[1]
+        color.g = value[2]
+        color.b = value[3]
+    end
+
+    tes3.worldController.weatherController:updateVisuals()
+end
+
 timer.register("colossus:jailArrival", function()
     tes3.mobilePlayer.fatigue.current = 1
 
@@ -73,6 +135,9 @@ local function onActivate(e)
         local offset = tes3vector3.new(1024, 0, 128) * 100
         tes3.player.position = tes3.player.position + offset
 
+        applyConfig(exteriorConfig)
+        log:debug("exterior config applied")
+
         -- Skip to 7 am for pretty sunrise lighting.
         utils.setCurrentHour(7)
 
@@ -110,6 +175,11 @@ local function enteredAdasamsibi()
         return
     end
 
+    cacheExteriorConfig()
+
+    applyConfig(interiorConfig)
+    log:debug("interior config applied")
+
     glitch.start(ref)
     heartBeat.start(ref)
     distantLandConfig.setEnabled(true)
@@ -117,6 +187,9 @@ end
 
 
 local function exitedAdasamsibi()
+    applyConfig(exteriorConfig)
+    log:debug("exterior config applied")
+
     glitch.stop()
     heartBeat.stop()
     distantLandConfig.setEnabled(false)
