@@ -31,7 +31,7 @@ teleports:createDropdown({
             label = "Elsweyr",
             value = {
                 reference = "player",
-                cell = "Elsweyr",
+                cell = "Elsweyr, Oasis",
                 position = { -666.00, 365.00, 7000.00 },
                 orientation = { 0.0, 0.0, 0.0 },
             },
@@ -41,15 +41,15 @@ teleports:createDropdown({
             value = {
                 reference = "player",
                 cell = "Grazelands Region",
-                position = { 71377.05, 69741.88, 890.79 },
-                orientation = { 0.00, 0.00, -1.54 },
+                position = { 68340.73, 78774.79, 1977.97 },
+                orientation = { 0.00, 0.00, -1.70 },
             },
         },
         {
             label = "Cave Interior",
             value = {
                 reference = "player",
-                cell = "Adasamsibi1",
+                cell = "Adasamsibi",
                 position = { 56.49, -82.12, 600.32 },
                 orientation = { 0.00, 0.00, 2.36 },
             },

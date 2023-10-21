@@ -34,7 +34,7 @@ timer.register("colossus:teleportJail", function()
     cameraShake.stop()
 
     tes3.positionCell({
-        cell = "Imperial Outpost",
+        cell = "Elsweyr, Imperial Outpost",
         position = { 508.01, -67.72, -628.55 },
         orientation = { 0.00, 0.00, 0.02 },
     })
