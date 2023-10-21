@@ -15,7 +15,9 @@
 - serve as a tutorial for the "time wound" doors where PC travels between past and present
 
 > Arcane room
-tbd
+- help a battle mage with his research (fetch quest)
+- accept to deliver something to the High Mage in the Dwemer Studies
+- present arcane room is an actual dungeon crawl with magic loot?
 
 > Dwemer lab
 - past room has a locked door, an inert sentinel, ~~Zarin~~ high ranking battlemage ("Thank you for bringing me this, Recruit, you may return to your post now" "The next room is off limit to anyone but me" "I mist get thing ready before the arrival of Zarin")
