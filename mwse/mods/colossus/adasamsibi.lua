@@ -132,8 +132,10 @@ local function onActivate(e)
 
     -- Teleport to desert and do additional effects.
     timer.delayOneFrame(function()
-        local offset = tes3vector3.new(1024, 0, 128) * 100
-        tes3.player.position = tes3.player.position + offset
+        local pos = tes3.player.position
+        local src = tes3.getReference("ggw_dune_teleport_src").position
+        local dst = tes3.getReference("ggw_dune_teleport_dst").position
+        tes3.player.position = dst + (pos - src)
 
         applyConfig(exteriorConfig)
         log:debug("exterior config applied")
