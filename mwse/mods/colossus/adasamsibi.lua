@@ -72,7 +72,29 @@ local function applyConfig(config)
 end
 
 timer.register("colossus:jailArrival", function()
+    tes3.setJournalIndex({ id = "ggw_02_tg", index = 5, showMessage = true })
+
     tes3.mobilePlayer.fatigue.current = 1
+
+    -- Remove spell effects added by the artifact.
+
+    for _, spell in pairs({
+        "ggw_cave_spelleffect_01",
+        "ggw_cave_spelleffect_02",
+        "ggw_cave_spelleffect_02a",
+        "ggw_cave_spelleffect_03",
+        "ggw_cave_spelleffect_04",
+        "ggw_cave_spelleffect_04a",
+        "ggw_cave_spelleffect_05",
+    }) do
+        tes3.removeSpell({
+            reference = tes3.player,
+            spell = spell,
+            updateGUI = false,
+        })
+    end
+
+    -- Transfer items to the evidence chest.
 
     local evidenceChest = tes3.getReference("ggw_evidence_chest")
     for _, stack in pairs(tes3.player.object.inventory) do
@@ -83,12 +105,12 @@ timer.register("colossus:jailArrival", function()
                 item = stack.object,
                 count = stack.count,
                 playSound = false,
+                updateGUI = false,
             })
         end
     end
-    tes3.updateInventoryGUI({ reference = tes3.player })
 
-    tes3.setJournalIndex({ id = "ggw_02_tg", index = 5, showMessage = true })
+    tes3.updateInventoryGUI({ reference = tes3.player })
 end)
 
 timer.register("colossus:teleportJail", function()
