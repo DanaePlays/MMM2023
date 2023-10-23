@@ -3,7 +3,8 @@
 - PC wear s a Blade uniform as a disguise.
 - Talking npcs will result in a "Move along, Recruit, I'm sure you have your orders" "goodbye"
 - Talking to npcs without the uniform will result in a time rewind a.k.a to to the beginning of the Halls.
-- Talking to npcs with a bounty will result in a stern warning + stolen good confiscated (aka limeware platter at the census office.
+- Talking to npcs with a bounty will result in a stern warning + stolen good confiscated (aka limeware platter at the census office.)
+- Killing npcs result in the message "with the death blab la destiny blab la"
 
 > Progession
 - Living quarters
@@ -13,14 +14,17 @@
 
 > Living quarters
 - serve as a tutorial for the "time wound" doors where PC travels between past and present
+- present cell is now a spider den (spider needs ghost effect). Loot : Blade helmet, enchanted sword
 
 > Arcane room
 - help a battle mage with his research (fetch quest)
 - accept to deliver something to the High Mage in the Dwemer Studies
-- present arcane room is an actual dungeon crawl with magic loot?
+- present arcane room is infested with scorpions (preferably ghost effect)
+- loot past: potions, scrolls, soul gems, ingredients, books if PC can steal them undetected
+- loot present: 2 lovely enchanted weapons, scorpion ingredients, 1 grand soul gem
 
 > Dwemer lab
-- past room has a locked door, an inert sentinel, ~~Zarin~~ high ranking battlemage ("Thank you for bringing me this, Recruit, you may return to your post now" "The next room is off limit to anyone but me" "I mist get thing ready before the arrival of Zarin")
+- past room has a locked door, an inert sentinel, ~~Zurin~~ high ranking battlemage ("Thank you for bringing me this, Recruit, you may return to your post now" "The next room is off limit to anyone but me" "I mist get thing ready before the arrival of Zarin")
 - present room has active sentinel (fight!), dead Zarin with key to door
 
 > Numi's room
