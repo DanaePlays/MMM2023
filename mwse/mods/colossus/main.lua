@@ -4,6 +4,7 @@ local function onInitialized()
         dofile("colossus.quests")
         dofile("colossus.elsweyr")
         dofile("colossus.adasamsibi")
+        dofile("colossus.shaders.timeWound")
     end
 end
 event.register("initialized", onInitialized)

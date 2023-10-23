@@ -5,12 +5,9 @@ float tension = 1.0;
 float angle = radians(180.0);
 
 float time;
-
-// float fov;
 float2 rcpres;
-
 float3 eyepos;
-// float3 eyevec;
+float3 eyevec;
 
 float4x4 mview;
 float4x4 mproj;
@@ -105,10 +102,10 @@ float4 draw(float2 tex: TEXCOORD0): COLOR {
     float tensionRadius = lerp(distRadius, radius, tension);
 
     float percent = max(distRadius, 0.0) / tensionRadius;
-    float theta = percent * percent * angle * 0.5;
+    float theta = percent * percent * angle;
 
     // animation
-    // theta *= saturate(frac(time * 0.05));
+    theta *= sin(time * 0.2) * 2.0;
 
     tex = mul(swirlTransform(theta), tex - center);
     tex += 2.0 * center;

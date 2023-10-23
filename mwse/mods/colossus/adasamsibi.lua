@@ -2,7 +2,6 @@ local distantLandConfig = require("colossus.distantLandConfig")
 local cameraShake = require("colossus.effects.cameraShake")
 local heartBeat = require("colossus.effects.heartBeat")
 
-local glitch = require("colossus.shaders.glitch")
 local flash = require("colossus.shaders.flash")
 local blackout = require("colossus.shaders.blackout")
 
@@ -130,7 +129,7 @@ end)
 timer.register("colossus:collapse", function()
     tes3.mobilePlayer.fatigue.current = -10000
 
-    tes3.fadeOut({ duration = 1.0 })
+    tes3.fadeOut({ duration = 1.5 })
     timer.start({ duration = 6.0, callback = "colossus:teleportJail" })
 end)
 
@@ -166,7 +165,6 @@ local function onActivate(e)
         utils.setCurrentHour(7)
 
         -- Stop the artifact effects.
-        glitch.stop()
         heartBeat.stop()
 
         cameraShake.start({
@@ -204,7 +202,6 @@ local function enteredAdasamsibi()
     applyConfig(interiorConfig)
     log:debug("interior config applied")
 
-    glitch.start(ref)
     heartBeat.start(ref)
     distantLandConfig.setEnabled(true)
 end
@@ -214,7 +211,7 @@ local function exitedAdasamsibi()
     applyConfig(exteriorConfig)
     log:debug("exterior config applied")
 
-    glitch.stop()
+    -- glitch.stop()
     heartBeat.stop()
     distantLandConfig.setEnabled(false)
 end
