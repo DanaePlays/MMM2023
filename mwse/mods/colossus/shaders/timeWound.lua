@@ -6,6 +6,7 @@ local PORTAL_ID = {
     ["ggw_portal_door_back"] = true,
     ["ggw_portal_door_forward"] = true,
     ["ggw_portal_door_forward01"] = true,
+    ["ggw_conj_portal_door"] = true,
 }
 
 ---@type { [tes3reference] : boolean }
