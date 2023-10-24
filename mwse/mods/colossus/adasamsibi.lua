@@ -204,6 +204,8 @@ local function enteredAdasamsibi()
 
     heartBeat.start(ref)
     distantLandConfig.setEnabled(true)
+
+    tes3.streamMusic({ path = "ggw\\silence.mp3", situation = tes3.musicSituation.uninterruptible })
 end
 
 
@@ -211,9 +213,10 @@ local function exitedAdasamsibi()
     applyConfig(exteriorConfig)
     log:debug("exterior config applied")
 
-    -- glitch.stop()
     heartBeat.stop()
     distantLandConfig.setEnabled(false)
+
+    tes3.streamMusic({ path = "ggw\\silence.mp3", situation = tes3.musicSituation.uninterruptible })
 end
 
 
@@ -227,3 +230,12 @@ local function onCellChanged(e)
     end
 end
 event.register("cellChanged", onCellChanged, { priority = 1 })
+
+local function onMusicSelectTrack(e)
+    local cell = tes3.getPlayerCell()
+    if cell.id == "Adasamsibi" then
+        e.music = "ggw\\silence.mp3"
+        return false
+    end
+end
+event.register("musicSelectTrack", onMusicSelectTrack, { priority = 360 })
