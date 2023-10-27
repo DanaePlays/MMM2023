@@ -133,29 +133,9 @@ event.register("magicEffectsResolved", function()
 end)
 
 event.register("loaded", function()
-    timer.delayOneFrame(function()
-        local s1 = tes3.createObject({
-            id = "ggw_test_reinteg_weap",
-            name = "Reintegrate Weapon",
-            objectType = tes3.objectType.spell,
-            getIfExists = true,
-        })
-        s1.effects[1].id = tes3.effect.ggwReintegrateWeapon
-        s1.effects[1].min = 20
-        s1.effects[1].max = 20
-        s1.effects[1].duration = 1
-        tes3.addSpell({ reference = tes3.player, spell = s1 })
-
-        local s2 = tes3.createObject({
-            id = "ggw_test_reinteg_armo",
-            name = "Reintegrate Armor",
-            objectType = tes3.objectType.spell,
-            getIfExists = true,
-        })
-        s2.effects[1].id = tes3.effect.ggwReintegrateArmor
-        s2.effects[1].min = 20
-        s2.effects[1].max = 20
-        s2.effects[1].duration = 1
-        tes3.addSpell({ reference = tes3.player, spell = s2 })
-    end)
+    local spell = tes3.getObject("ggw_reintegrate")
+    if spell then
+        spell.effects[1].id = tes3.effect.ggwReintegrateArmor
+        spell.effects[2].id = tes3.effect.ggwReintegrateWeapon
+    end
 end)
