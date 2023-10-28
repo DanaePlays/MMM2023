@@ -90,26 +90,25 @@ float4 draw(float2 tex: TEXCOORD0): COLOR {
 
     // do swirling
 
-    center /= 2.0;
-    tex -= center;
-
     float2 resolution = 1.0 / rcpres;
     float aspectRatio = resolution.x / resolution.y;
-    center.x /= aspectRatio;
-    tex.x /= aspectRatio;
+    center.y /= aspectRatio;
+    tex.y /= aspectRatio;
 
     float distRadius = radius - distance(tex, center);
     float tensionRadius = lerp(distRadius, radius, tension);
-
     float percent = max(distRadius, 0.0) / tensionRadius;
     float theta = percent * percent * angle;
 
     // animation
     theta *= sin(time * 0.2) * 2.0;
 
+    center /= 2.0;
+    tex -= center;
     tex = mul(swirlTransform(theta), tex - center);
     tex += 2.0 * center;
-    tex.x *= aspectRatio;
+    tex.y *= aspectRatio;
+
     color = tex2D(s0, tex);
 
     return float4(color, 1.0);
