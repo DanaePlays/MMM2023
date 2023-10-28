@@ -1,4 +1,4 @@
-local perlin = require("colossus.perlin")
+local perlin = require("colossus.effects.perlin")
 local px = perlin(2 ^ 4)
 local py = perlin(2 ^ 5)
 local pz = perlin(2 ^ 6)

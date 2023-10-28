@@ -1,4 +1,4 @@
-local log = require("colossus.log")
+local utils = require("colossus.utils")
 
 local this = {}
 
@@ -7,9 +7,8 @@ local this = {}
 
 ---@param params flashParams
 function this.trigger(params)
-    local shader = mge.shaders.load({ name = "ggw_flash" })
+    local shader = utils.getShader("ggw_flash")
     if shader == nil then
-        log:error("Failed to load shader: ggw_flash")
         return
     end
 

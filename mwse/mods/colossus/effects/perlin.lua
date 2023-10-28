@@ -54,37 +54,37 @@ local function generatePermutation(seed)
 end
 
 function this.noise(self, x, y, z)
-    y = y or 0
-    z = z or 0
+    y        = y or 0
+    z        = z or 0
 
     local xi = math.floor(x) % 0x100
     local yi = math.floor(y) % 0x100
     local zi = math.floor(z) % 0x100
 
-    x = x - math.floor(x)
-    y = y - math.floor(y)
-    z = z - math.floor(z)
+    x        = x - math.floor(x)
+    y        = y - math.floor(y)
+    z        = z - math.floor(z)
 
-    local u = fade(x)
-    local v = fade(y)
-    local w = fade(z)
+    local u  = fade(x)
+    local v  = fade(y)
+    local w  = fade(z)
 
     local A, AA, AB, AAA, ABA, AAB, ABB, B, BA, BB, BAA, BBA, BAB, BBB
-    A   = self.p[xi] + yi
-    AA  = self.p[A] + zi
-    AB  = self.p[A + 1] + zi
-    AAA = self.p[AA]
-    ABA = self.p[AB]
-    AAB = self.p[AA + 1]
-    ABB = self.p[AB + 1]
+    A        = self.p[xi] + yi
+    AA       = self.p[A] + zi
+    AB       = self.p[A + 1] + zi
+    AAA      = self.p[AA]
+    ABA      = self.p[AB]
+    AAB      = self.p[AA + 1]
+    ABB      = self.p[AB + 1]
 
-    B   = self.p[xi + 1] + yi
-    BA  = self.p[B] + zi
-    BB  = self.p[B + 1] + zi
-    BAA = self.p[BA]
-    BBA = self.p[BB]
-    BAB = self.p[BA + 1]
-    BBB = self.p[BB + 1]
+    B        = self.p[xi + 1] + yi
+    BA       = self.p[B] + zi
+    BB       = self.p[B + 1] + zi
+    BAA      = self.p[BA]
+    BBA      = self.p[BB]
+    BAB      = self.p[BA + 1]
+    BBB      = self.p[BB + 1]
 
     return lerp(w,
         lerp(v,
