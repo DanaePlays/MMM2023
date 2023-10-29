@@ -141,7 +141,7 @@ local function onActivate(e)
         return
     end
 
-    -- Trigger a white flash and sound effect.
+    e.target:disable()
 
     flash.trigger({ duration = 1.5 })
 
