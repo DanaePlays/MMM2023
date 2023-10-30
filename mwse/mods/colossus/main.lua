@@ -1,12 +1,10 @@
-dofile("colossus.spells") -- TODO: mod active check before initialized (?)
-
-local function onInitialized()
-    if tes3.isModActive("Halls_of_Colossus.esm") then
-        dofile("colossus.ghosts")
-        dofile("colossus.quests")
-        dofile("colossus.elsweyr")
-        dofile("colossus.adasamsibi")
-        dofile("colossus.shaders.timeWound")
-    end
+if not tes3.isModActive("Halls_of_Colossus.esm") then
+    return
 end
-event.register("initialized", onInitialized)
+
+dofile("colossus.spells")
+dofile("colossus.ghosts")
+dofile("colossus.quests")
+dofile("colossus.elsweyr")
+dofile("colossus.adasamsibi")
+dofile("colossus.shaders.timeWound")

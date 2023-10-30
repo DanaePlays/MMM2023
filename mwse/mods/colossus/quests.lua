@@ -29,39 +29,41 @@ end
 event.register("referenceActivated", updateLivingOrDecayingReferences)
 
 
----@param e mwseOverrideScriptCallbackData
-mwse.overrideScript("ggw_finale_script", function(e)
-    if tes3ui.menuMode() then
-        return
-    end
+event.register("initialized", function()
+    ---@param e mwseOverrideScriptCallbackData
+    mwse.overrideScript("ggw_finale_script", function(e)
+        if tes3ui.menuMode() then
+            return
+        end
 
-    tes3.setJournalIndex({
-        id = "ggw_01_intro",
-        index = 100,
-        showMessage = true,
-    })
+        tes3.setJournalIndex({
+            id = "ggw_01_intro",
+            index = 100,
+            showMessage = true,
+        })
 
-    tes3.positionCell({
-        reference = tes3.player,
-        cell = "Adasamsibi",
-        position = { 10225, -906, 930 },
-        orientation = { 0.00, 0.00, -1.60 },
-    })
+        tes3.positionCell({
+            reference = tes3.player,
+            cell = "Adasamsibi",
+            position = { 10225, -906, 930 },
+            orientation = { 0.00, 0.00, -1.60 },
+        })
 
-    tes3.playSound({
-        reference = tes3.player,
-        sound = "ggw_teleport",
-        mixChannel = tes3.soundMix.master,
-    })
+        tes3.playSound({
+            reference = tes3.player,
+            sound = "ggw_teleport",
+            mixChannel = tes3.soundMix.master,
+        })
 
-    tes3.addSpell({
-        reference = tes3.player,
-        spell = "ggw_create_portal",
-    })
+        tes3.addSpell({
+            reference = tes3.player,
+            spell = "ggw_create_portal",
+        })
 
-    local flash = require("colossus.shaders.flash")
-    flash.trigger({ duration = 1.5 })
+        local flash = require("colossus.shaders.flash")
+        flash.trigger({ duration = 1.5 })
 
-    ---@diagnostic disable-next-line: deprecated
-    mwscript.stopScript({ script = e.script })
+        ---@diagnostic disable-next-line: deprecated
+        mwscript.stopScript({ script = e.script })
+    end)
 end)
