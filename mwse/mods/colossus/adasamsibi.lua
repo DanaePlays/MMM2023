@@ -202,10 +202,13 @@ local function enteredAdasamsibi()
     applyConfig(interiorConfig)
     log:debug("interior config applied")
 
-    heartBeat.start(ref)
     distantLandConfig.setEnabled(true)
 
-    tes3.streamMusic({ path = "ggw\\silence.mp3", situation = tes3.musicSituation.uninterruptible })
+    local index = tes3.getJournalIndex({ id = "ggw_01_intro" })
+    if index < 100 then
+        heartBeat.start(ref)
+        tes3.streamMusic({ path = "ggw\\silence.mp3", situation = tes3.musicSituation.uninterruptible })
+    end
 end
 
 
