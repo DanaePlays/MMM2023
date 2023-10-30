@@ -1,5 +1,20 @@
 tes3.claimSpellEffectId("ggwReintegrateArmor", 1702)
 
+---@type tes3.armorSlot[]
+local slotPriorities = {
+    tes3.armorSlot.shield,
+    tes3.armorSlot.cuirass,
+    tes3.armorSlot.leftPauldron,
+    tes3.armorSlot.rightPauldron,
+    tes3.armorSlot.leftBracer,
+    tes3.armorSlot.rightBracer,
+    tes3.armorSlot.leftGauntlet,
+    tes3.armorSlot.rightGauntlet,
+    tes3.armorSlot.helmet,
+    tes3.armorSlot.greaves,
+    tes3.armorSlot.boots,
+}
+
 event.register("magicEffectsResolved", function()
     tes3.addMagicEffect({
         id = tes3.effect.ggwReintegrateArmor,
@@ -50,8 +65,13 @@ event.register("magicEffectsResolved", function()
                 return
             end
 
-            for _, stack in pairs(target.object.equipment) do
-                if stack.object.objectType == tes3.objectType.armor then
+            for _, slot in ipairs(slotPriorities) do
+                local stack = tes3.getEquippedItem({
+                    actor = tes3.player,
+                    objectType = tes3.objectType.armor,
+                    slot = slot,
+                })
+                if stack then
                     local maxCondition = stack.object.maxCondition
                     local condition = stack.itemData.condition
 
