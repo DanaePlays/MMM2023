@@ -44,7 +44,7 @@ mwse.overrideScript("ggw_finale_script", function(e)
     tes3.positionCell({
         reference = tes3.player,
         cell = "Adasamsibi",
-        position = { 10967.27, -941.22, 942.81 },
+        position = { 10225, -906, 930 },
         orientation = { 0.00, 0.00, -1.60 },
     })
 
