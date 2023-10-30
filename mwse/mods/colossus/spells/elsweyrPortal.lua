@@ -7,7 +7,7 @@ event.register("magicEffectsResolved", function()
         school = tes3.magicSchool.mysticism,
         description = "Conjure a portal to Elsweyr.",
         baseMagickaCost = 6.0,
-        icon = "ggw\\s\\tx_reinteg_armo.dds",
+        icon = "ggw\\s\\tx_elsweyr_portal.dds",
         particleTexture = "vfx_bluecloud.tga",
         castSound = "mysticism cast",
         castVFX = "VFX_MysticismCast",
