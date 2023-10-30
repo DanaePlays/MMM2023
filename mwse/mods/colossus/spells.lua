@@ -15,10 +15,5 @@ event.register("loaded", function()
     if spell then
         spell.effects[1].id = tes3.effect.ggwElsweyrPortal
         spell.effects[1].duration = 60
-
-        tes3.addSpell({
-            reference = tes3.player,
-            spell = "ggw_create_portal",
-        })
     end
 end)

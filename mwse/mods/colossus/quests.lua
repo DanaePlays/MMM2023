@@ -54,6 +54,11 @@ mwse.overrideScript("ggw_finale_script", function(e)
         mixChannel = tes3.soundMix.master,
     })
 
+    tes3.addSpell({
+        reference = tes3.player,
+        spell = "ggw_create_portal",
+    })
+
     local flash = require("colossus.shaders.flash")
     flash.trigger({ duration = 1.5 })
 
