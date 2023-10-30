@@ -9,6 +9,7 @@ local PORTAL_ID = {
     ["ggw_conj_portal_door"] = true,
     ["ggw_portal_door_back_arc"] = true,
     ["ggw_portal_door_desert"] = true,
+    ["ggw_portal_door_desert_exit"] = true,
 }
 
 ---@type { [tes3reference] : boolean }
@@ -43,7 +44,7 @@ local function update()
     for portal in pairs(activePortals) do
         local sceneNode = portal.sceneNode
         if sceneNode
-            and not sceneNode.appCulled
+            and not sceneNode:isAppCulled()
             and not sceneNode:isFrustumCulled(camera)
         then
             local distance = cameraPosition:distance(sceneNode.worldBoundOrigin)
