@@ -2,6 +2,9 @@ local utils = require("colossus.utils")
 
 local this = {}
 
+---@type mgeShaderHandle?
+local shader
+
 ---@return mwseTimer?
 local blackoutTimer
 
@@ -18,7 +21,7 @@ function this.start(params)
         blackoutTimer = nil
     end
 
-    local shader = utils.getShader("ggw_blackout")
+    shader = utils.getShader("ggw_blackout")
     if shader == nil then
         return
     end
@@ -42,7 +45,6 @@ function this.stop()
         blackoutTimer = nil
     end
 
-    local shader = utils.getShader("ggw_blackout")
     if shader then
         shader.enabled = false
     end
@@ -52,7 +54,7 @@ event.register("loaded", this.stop)
 
 ---@param e { timer: mwseTimer }
 local function blackout(e)
-    local shader = utils.getShader("ggw_blackout")
+    shader = utils.getShader("ggw_blackout")
     if shader == nil then
         return
     end
