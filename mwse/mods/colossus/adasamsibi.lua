@@ -75,6 +75,9 @@ timer.register("colossus:jailArrival", function()
 
     tes3.mobilePlayer.fatigue.current = 1
 
+    -- Add Time Slow spell
+    tes3.addSpell({ reference = tes3.player, spell = "ggw_slow_time" })
+
     -- Remove spell effects added by the artifact.
 
     for _, spell in pairs({

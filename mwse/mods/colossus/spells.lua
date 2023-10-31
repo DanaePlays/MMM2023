@@ -1,6 +1,7 @@
 dofile("colossus.spells.elsweyrPortal")
 dofile("colossus.spells.reintegrateArmor")
 dofile("colossus.spells.reintegrateWeapon")
+dofile("colossus.spells.slowTime")
 
 event.register("loaded", function()
     local spell
@@ -15,5 +16,10 @@ event.register("loaded", function()
     if spell then
         spell.effects[1].id = tes3.effect.ggwElsweyrPortal
         spell.effects[1].duration = 60
+    end
+
+    spell = tes3.getObject("ggw_slow_time")
+    if spell then
+        spell.effects[1].id = tes3.effect.ggwSlowTime
     end
 end)
