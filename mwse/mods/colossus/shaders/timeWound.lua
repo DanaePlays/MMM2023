@@ -10,6 +10,7 @@ local PORTAL_ID = {
     ["ggw_portal_door_back_arc"] = true,
     ["ggw_portal_door_desert"] = true,
     ["ggw_portal_door_desert_exit"] = true,
+    ["ggw_timewound"] = true,
 }
 
 ---@type { [tes3reference] : boolean }
