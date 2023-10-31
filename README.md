@@ -42,9 +42,10 @@ Credits
 - Beetle creatures by Piratelord - https://www.nexusmods.com/morrowind/mods/30563
 - Limeware lamp by R-Zero
 - The Daggerfall Book Collection by Michael Damon (aka Launcelot) - https://web.archive.org/web/20161103134336/http://mw.modhistory.com/download-11-2443
-- Maho's faces (old an young) by DimNussens
+- Maho's faces (old and young) by DimNussens
 
 Additional thanks to
+- Dexter for helping with shaders
 - Merlord for the ashfall compatibility (Moonstone harvesting)
 - Vegetto for help with models
 - R-Zero for lore guidance
