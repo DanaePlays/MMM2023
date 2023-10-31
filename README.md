@@ -14,8 +14,6 @@ Features:
 - Solve puzzles, ultimately to gain access to the inner sanctum of the Halls.
 - Finally, find your way back home.
 
-Prepare to traverse time, face challenges, and unravel the enigma of the Halls of Colossus in this immersive Morrowind mod. Your adventure awaits!
-
 To begin your adventure, Caius Cosades, Edwinna and Sugar-Lips will share information with you if you are in their faction. If not, you can travel to Vos and look for an old Khajiit on the road.
 
 Requirements
@@ -43,7 +41,8 @@ Credits
 - Scorpions creatures by Pumaman - https://web.archive.org/web/20161103132158/http://mw.modhistory.com/download-26-7302
 - Beetle creatures by Piratelord - https://www.nexusmods.com/morrowind/mods/30563
 - Limeware lamp by R-Zero
-- The Daggerfall Book Collection by Michael Damon (aka Launcelot) - https://web.archive.org/web/20161103134336/http://mw.modhistory.com/download-11-2443 
+- The Daggerfall Book Collection by Michael Damon (aka Launcelot) - https://web.archive.org/web/20161103134336/http://mw.modhistory.com/download-11-2443
+- Maho's faces (old an young) by DimNussens
 
 Additional thanks to
 - Merlord for the ashfall compatibility (Moonstone harvesting)
