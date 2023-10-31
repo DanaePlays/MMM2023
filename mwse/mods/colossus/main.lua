@@ -1,4 +1,4 @@
-if not tes3.isModActive("Halls_of_Colossus.esm") then
+if not tes3.isModActive("Halls_of_Colossus.esp") then
     return
 end
 
