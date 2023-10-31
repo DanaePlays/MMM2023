@@ -49,6 +49,8 @@ event.register("magicEffectsResolved", function(e)
     event.register("spellCasted", function(e)
         if e.caster ~= tes3.player then
             return
+        elseif e.source.id ~= "ggw_slow_time" then
+            return
         end
 
         local context = table.getset(tes3.player.data, "ggw_slowTimeContext", {})
