@@ -36,10 +36,9 @@ event.register("initialized", function()
             return
         end
 
-        tes3.setJournalIndex({
+        tes3.updateJournal({
             id = "ggw_01_intro",
             index = 100,
-            showMessage = true,
         })
 
         tes3.positionCell({

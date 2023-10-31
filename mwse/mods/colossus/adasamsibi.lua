@@ -71,7 +71,7 @@ local function applyConfig(config)
 end
 
 timer.register("colossus:jailArrival", function()
-    tes3.setJournalIndex({ id = "ggw_02_tg", index = 5, showMessage = true })
+    tes3.updateJournal({ id = "ggw_02_tg", index = 5 })
 
     tes3.mobilePlayer.fatigue.current = 1
 
