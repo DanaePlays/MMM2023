@@ -1,6 +1,7 @@
 tes3.claimSpellEffectId("ggwSlowTime", 1704)
 
 local TIME_SCALAR = 0.1
+local PC_TIME_SCALAR = 0.5 / TIME_SCALAR
 
 event.register("magicEffectsResolved", function(e)
     tes3.addMagicEffect({
@@ -60,7 +61,7 @@ event.register("magicEffectsResolved", function(e)
         })
 
         tes3.worldController.simulationTimeScalar = TIME_SCALAR
-        setPlayerCastSpeed(1.0 / TIME_SCALAR)
+        setPlayerCastSpeed(PC_TIME_SCALAR)
 
         local motionblur = require("colossus.shaders.motionblur")
         motionblur.start()
@@ -99,7 +100,7 @@ event.register("magicEffectsResolved", function(e)
         if e.reference == tes3.player
             and e.reference.data.ggw_slowTimeContext
         then
-            e.speed = e.speed * (1.0 / TIME_SCALAR)
+            e.speed = e.speed * PC_TIME_SCALAR
         end
     end)
 
@@ -108,7 +109,7 @@ event.register("magicEffectsResolved", function(e)
         if e.reference == tes3.player
             and e.reference.data.ggw_slowTimeContext
         then
-            e.attackSpeed = e.attackSpeed * (1.0 / TIME_SCALAR)
+            e.attackSpeed = e.attackSpeed * PC_TIME_SCALAR
         end
     end)
 
